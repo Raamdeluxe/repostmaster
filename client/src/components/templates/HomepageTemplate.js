@@ -1,3 +1,4 @@
+import Styles from "../templates/HomepageTemplate.module.css";
 import Navbar from "../sections/Navbar";
 import Hero from "../sections/Hero";
 import KeyFeatures from "../sections/KeyFeatures";
@@ -9,7 +10,7 @@ import Footer from "../sections/Footer";
 
 export default function HomepageTemplate() {
   return (
-    <div>
+    <div className={Styles.homepage}>
       <Navbar />
       <Hero />
       <KeyFeatures />

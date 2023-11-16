@@ -6,6 +6,7 @@ import Testimonials from "../sections/Testimonials";
 import Announcement from "../sections/Announcement";
 import Pricing from "../sections/Pricing";
 import Waitlist from "../sections/Waitlist";
+import ContactForm from "../sections/ContactForm";
 import Footer from "../sections/Footer";
 
 export default function HomepageTemplate() {
@@ -18,6 +19,7 @@ export default function HomepageTemplate() {
       <Announcement />
       <Pricing />
       <Waitlist />
+      <ContactForm />
       <Footer />
     </div>
   );

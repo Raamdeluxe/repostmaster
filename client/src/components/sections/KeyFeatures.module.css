@@ -24,6 +24,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 80px;
+  color: #fff;
 }
 
 .key__features__subtitle {
@@ -38,8 +39,10 @@
   line-height: 26px;
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 .key__features__content__cards {
   width: 100%;
+  margin-top: 5%;
 }

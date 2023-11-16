@@ -61,7 +61,9 @@ export default function PricingCard({ ...pricingData }) {
           </span>
         </div>
         <div className={styles.pricing__card__button}>
-          <button>Sign up</button>
+          <a href="#contact__form">
+            <button>Sign up</button>
+          </a>
         </div>
       </div>
     </div>

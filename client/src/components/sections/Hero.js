@@ -20,7 +20,9 @@ export default function Hero() {
           </h2>
         </div>
         <div className={styles.hero__signup__button}>
-          <button>I am interested</button>
+          <a href="#contact__form">
+            <button>I am interested</button>
+          </a>
         </div>
       </div>
       <div className={styles.hero__content__bottom}>

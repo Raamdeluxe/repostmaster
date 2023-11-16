@@ -10,7 +10,9 @@ export default function Navbar() {
         </h1>
       </div>
       <div className={styles.navbar__signup__button}>
-        <button>Sign Up</button>
+        <a href="#contact__form">
+          <button>Sign Up</button>
+        </a>
       </div>
     </nav>
   );

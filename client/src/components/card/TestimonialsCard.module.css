@@ -3,8 +3,8 @@
   flex-direction: column;
   border-radius: 20px;
   background: #18181c;
-  padding: 37px 37px 16px 37px;
-  width: 100%;
+  padding: 2%;
+  width: 25%;
 }
 
 .testimonials__card__text p {
@@ -13,7 +13,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 38px; /* 211.111% */
+  line-height: 38px;
 }
 
 .testimonials__card__profile {
@@ -25,7 +25,6 @@
 .testimonials__card__profile__image {
   width: 82px;
   height: 55px;
-  flex-shrink: 0;
 }
 
 .testimonials__card__profile__image img {
@@ -47,7 +46,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
 }
 
 .testimonials__card__profile__position {
@@ -58,7 +57,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 200% */
+  line-height: 28px;
 }
 
 .testimonials__card_profile__review {

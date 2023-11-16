@@ -12,6 +12,7 @@ export default function TestimonialsList() {
       position: "Coffe lover",
       SvgComponent: () => [
         <svg
+          key="1"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -31,6 +32,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="2"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -50,6 +52,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="3"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -69,6 +72,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="4"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -88,6 +92,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="5"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -115,6 +120,7 @@ export default function TestimonialsList() {
       position: "Viral Videos accowner",
       SvgComponent: () => [
         <svg
+          key="1"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -134,6 +140,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="2"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -153,6 +160,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="3"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -172,6 +180,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="4"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -191,6 +200,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="5"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -218,6 +228,7 @@ export default function TestimonialsList() {
       position: "Car store owner",
       SvgComponent: () => [
         <svg
+          key="1"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -237,6 +248,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="2"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -256,6 +268,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="3"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -275,6 +288,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="4"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -294,6 +308,7 @@ export default function TestimonialsList() {
           </defs>
         </svg>,
         <svg
+          key="5"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="19"
@@ -317,8 +332,8 @@ export default function TestimonialsList() {
   ];
   return (
     <>
-      {testimonials.map((testimonial, index) => (
-        <TestimonialsCard key={index} {...testimonial} />
+      {testimonials.map((testimonial) => (
+        <TestimonialsCard key={testimonial.name} {...testimonial} />
       ))}
     </>
   );

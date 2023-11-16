@@ -121,9 +121,9 @@ export default function PricingList() {
               width="136.84"
               height="134.181"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -213,9 +213,9 @@ export default function PricingList() {
               width="129.871"
               height="131.039"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -257,8 +257,8 @@ export default function PricingList() {
   ];
   return (
     <>
-      {pricingData.map((pricingData, index) => (
-        <PricingCard key={index} {...pricingData} />
+      {pricingData.map((plan) => (
+        <PricingCard key={plan.title} {...plan} />
       ))}
     </>
   );

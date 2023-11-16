@@ -14,7 +14,10 @@ export default function PricingCard({ ...pricingData }) {
       <hr className={styles.horizontal__line}></hr>
       <ul className={styles.pricing__card__features}>
         {pricingData.features.map((feature, index) => (
-          <div className={styles.pricing__card__features__content}>
+          <div
+            key={`${feature}-${index}`}
+            className={styles.pricing__card__features__content}
+          >
             <li key={index} className={styles.pricing__card__features__icon}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

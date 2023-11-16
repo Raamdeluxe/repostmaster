@@ -97,8 +97,9 @@
   border-radius: 20px;
   margin-left: 5%;
   padding: 0% 2% 0% 2%;
-  width: 514px;
+  /* width: 514px; */
   height: 494px;
+  width: 35%;
   position: relative;
   z-index: 2;
 }
@@ -110,12 +111,13 @@
   text-align: center;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .hero__text h2 span {
   margin: 0;
   font-family: "poppins", sans-serif;
-  font-size: 64px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: 66px;
@@ -139,4 +141,18 @@
   z-index: 1;
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .hero__content__top {
+    width: 80%;
+  }
+  .hero__content__bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__text {
+    margin-left: 0;
+    width: 80%;
+  }
 }

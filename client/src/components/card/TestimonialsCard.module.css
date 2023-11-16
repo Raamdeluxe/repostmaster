@@ -5,6 +5,7 @@
   background: #18181c;
   padding: 2%;
   width: 27%;
+  box-sizing: border-box;
 }
 
 .testimonials__card__text p {
@@ -66,4 +67,11 @@
   justify-content: center;
   align-items: center;
   margin-left: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .testimonials__card {
+    width: 100%;
+    padding: 4%;
+  }
 }

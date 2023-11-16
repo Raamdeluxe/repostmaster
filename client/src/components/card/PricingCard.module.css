@@ -140,3 +140,10 @@
   font-weight: 400;
   line-height: 20px; /* 142.857% */
 }
+
+@media screen and (max-width: 700px) {
+  .pricing__card {
+    width: 75%;
+    padding: 4%;
+  }
+}

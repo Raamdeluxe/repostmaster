@@ -64,3 +64,26 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 700px) {
+  .waitlist__content {
+    width: 80%;
+  }
+  .waitlist__title {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .waitlist__title h2 {
+    text-align: center;
+  }
+
+  .waitlist__text {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .waitlist__text p {
+    text-align: center;
+  }
+}

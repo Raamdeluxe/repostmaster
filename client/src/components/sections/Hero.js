@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import Robot from "../../assets/images/CU1TE_BOT_VI_03 1.png";
+import Subtract from "../../assets/images/Subtract.png";
 
 export default function Hero() {
   return (
@@ -38,6 +39,7 @@ export default function Hero() {
         <div className={styles.hero__image}>
           <img src={Robot} alt="ai_robot" />
         </div>
+        <img src={Subtract} alt="subtract" className={styles.subtract} />
       </div>
     </section>
   );

@@ -44,7 +44,7 @@ export default function ContactForm() {
     if (nameError || emailError) return;
 
     try {
-      await axios.post("https://repostmaster.vercel.app/send-email", {
+      await axios.post("http://localhost:4000/send-email", {
         name: form.name,
         email: form.email,
       });

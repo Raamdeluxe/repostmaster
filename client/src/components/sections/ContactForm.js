@@ -3,8 +3,6 @@ import axios from "axios";
 import Styles from "./ContactForm.module.css";
 import Conformation from "../../assets/images/Group 269.png";
 
-//import env from "react-dotenv";
-
 export default function ContactForm() {
   const backendUrl = process.env.REACT_APP_BACKEND_API;
   const [form, setForm] = useState({

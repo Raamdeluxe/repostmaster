@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import Styles from "./ContactForm.module.css";
 import Conformation from "../../assets/images/Group 269.png";
 
@@ -31,7 +32,7 @@ export default function ContactForm() {
     setErrors((prevErrors) => ({ ...prevErrors, [name]: null }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const nameError = validateName(form.name);
     const emailError = validateEmail(form.email);
@@ -41,9 +42,18 @@ export default function ContactForm() {
     };
     setErrors(errors);
     if (nameError || emailError) return;
-    console.log(form);
+
+    try {
+      await axios.post("https://repostmaster.vercel.app/send-email", {
+        name: form.name,
+        email: form.email,
+      });
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+
     setForm({ name: "", email: "" });
-    setIsSubmitted(true);
   };
 
   return (

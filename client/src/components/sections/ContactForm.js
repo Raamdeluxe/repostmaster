@@ -3,7 +3,10 @@ import axios from "axios";
 import Styles from "./ContactForm.module.css";
 import Conformation from "../../assets/images/Group 269.png";
 
+//import env from "react-dotenv";
+
 export default function ContactForm() {
+  const backendUrl = process.env.REACT_APP_BACKEND_API;
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -44,7 +47,7 @@ export default function ContactForm() {
     if (nameError || emailError) return;
 
     try {
-      await axios.post("http://localhost:4000/send-email", {
+      await axios.post(`${backendUrl}/send-email`, {
         name: form.name,
         email: form.email,
       });
